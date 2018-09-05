@@ -1,19 +1,28 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
 
-class App extends Component {
+import Navigation from "./components/Navigation"
+import Bottom from "./components/Bottom"
+import Portfolio from "./components/Portfolio"
+import Blog from "./components/Blog"
+import About from "./components/About"
+import Contact from "./components/Contact"
+
+class App extends React.Component{
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Hello World</h1>
-        </header>
-        
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <Router>
+          <Navigation />
+        </Router>
+        <Portfolio />
+        <Blog />
+        <About />
+        <Contact />
+        <Bottom />
       </div>
-    );
+    )
   }
-}
+};
 
 export default App;
