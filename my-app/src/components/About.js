@@ -4,14 +4,14 @@ import React from "react";
 class About extends React.Component{
   render() {
     return (
-      <div class="mdl-grid portfolio-max-width">
+      <div className="mdl-grid portfolio-max-width">
 
         <div className="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
             <div className="mdl-card__title">
                 <h2 className="mdl-card__title-text">About</h2>
             </div>
             <div className="mdl-card__media">
-                <img className="article-image" src=" images/about-header.jpg" border="0" alt="" />
+                <img className="article-image" src={window.location.origin + '/images/about-header.jpg'} border="0" alt="" />
             </div>
 
             <div className="mdl-grid portfolio-copy">

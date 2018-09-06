@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 class Navigation extends React.Component{
     render() {
@@ -7,10 +7,12 @@ class Navigation extends React.Component{
         <div>
           <header className="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
             <div className="mdl-layout__header-row portfolio-logo-row">
-                <span className="mdl-layout__title">
-                    <div className="portfolio-logo"></div>
-                    <span className="mdl-layout__title">Simple portfolio website</span>
-                </span>
+                <NavLink className="mdl-navigation__link" exact to="/">
+                    <span className="mdl-layout__title">
+                        <div className="portfolio-logo"></div>
+                        <span className="mdl-layout__title">Simple portfolio website</span>
+                    </span>
+                </NavLink>
             </div>
             <div className="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
            

@@ -10,7 +10,7 @@ class Contact extends React.Component{
                   <h2 className="mdl-card__title-text">Contact</h2>
               </div>
               <div className="mdl-card__media">
-                  <img className="article-image" src=" images/contact-image.jpg" border="0" alt="" />
+                  <img className="article-image" src={window.location.origin + '/images/contact-image.jpg'} border="0" alt="" />
               </div>
               <div className="mdl-card__supporting-text">
                   <p>
@@ -22,16 +22,16 @@ class Contact extends React.Component{
                   <form action="#" className="">
                       <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                           <input className="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name" />
-                          <label className="mdl-textfield__label" for="Name">Name...</label>
+                          <label className="mdl-textfield__label" htmlFor="Name">Name...</label>
                           <span className="mdl-textfield__error">Letters and spaces only</span>
                       </div>
                       <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                           <input className="mdl-textfield__input" type="text" id="Email" />
-                          <label className="mdl-textfield__label" for="Email">Email...</label>
+                          <label className="mdl-textfield__label" htmlFor="Email">Email...</label>
                       </div>
                       <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                           <textarea className="mdl-textfield__input" type="text" rows="5" id="note"></textarea>
-                          <label className="mdl-textfield__label" for="note">Enter note</label>
+                          <label className="mdl-textfield__label" htmlFor="note">Enter note</label>
                       </div>
                       <p>
                           <button className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
