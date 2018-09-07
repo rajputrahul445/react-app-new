@@ -9,7 +9,9 @@ class Navigation extends React.Component{
             <div className="mdl-layout__header-row portfolio-logo-row">
                 <NavLink className="mdl-navigation__link" exact to="/">
                     <span className="mdl-layout__title">
-                        <div className="portfolio-logo"></div>
+                        <div className="portfolio-logo">
+                            <img src={window.location.origin + '/images/logo.png'} />
+                        </div>
                         <span className="mdl-layout__title">Simple portfolio website</span>
                     </span>
                 </NavLink>
